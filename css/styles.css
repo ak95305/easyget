@@ -460,7 +460,7 @@ span.sm-head {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    /* width: 500px; */
+    max-width: 500px;
     margin: auto;
     margin-top: 30px;
 }
@@ -718,7 +718,7 @@ footer li {
     }
 }
 
-
+/* 
 section {
     overflow: hidden;
-}
+} */

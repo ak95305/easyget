@@ -1,0 +1,242 @@
+header {
+    background: #fff;
+}
+
+
+/* hero section */
+.indus-wrap {
+    background: #FFEE58;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.indus-wrap h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+}
+
+.indus-wrap p {
+    font-size: 14px;
+    color: #000;
+}
+
+.indus-wrap .prm-btn {
+    margin-top: 20px;
+}
+
+.indus-wrap .hero-text span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.indus-wrap .hero-text span img {
+    width: 140px;
+}
+
+
+
+
+
+/* leading companies */
+.lead-head {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+}
+
+.lead-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lead-wrap .lead-brands {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.lead-wrap .lead-brands img {
+    max-height: 35px;
+}
+
+.cat-img,
+.dog-img {
+    max-width: 150px;
+    align-self: flex-end;
+}
+
+.lead-wrap .lead-brands::after,
+.lead-wrap .lead-brands::before {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2px;
+    background: #666;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lead-wrap .lead-brands::after {
+    bottom: -25px;
+    top: unset;
+}
+
+
+
+
+/* why us */
+.why-easy {
+    border-radius: 40px 40px 0 0;
+    background-color: #FFFBD7;
+}
+
+.why-easy .heading-style {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-text {
+    max-width: 400px;
+}
+
+.why-text .why-heading {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.why-text p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.why-point .why-pt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.why-pt .pt-text {
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 991px) {
+    .industries .hero-text {
+        text-align: left;
+    }
+
+    .indus-wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .industries .hero-text {
+        text-align: center;
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .industries .indus-wrap h1 {
+        font-size: 30px;
+    }
+
+    .indus-wrap span img {
+        display: none;
+    }
+
+    .indus-wrap .hero-text span {
+        display: inline;
+    }
+
+    .industries .indus-hero {
+        background: #FFEE58;
+    }
+
+    .indus-wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cat-img,
+    .dog-img {
+        display: none;
+        display: none;
+    }
+
+    .lead-wrap .lead-brands {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .lead-brands .lead-img {
+        width: 35%;
+    }
+
+    .lead-wrap .lead-brands img {
+        max-height: 35px;
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+
+    .why-text .why-heading {
+        font-size: 35px;
+    }
+
+    .why-text {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 500px;
+    }
+
+    .why-point .why-pt {
+        margin: auto;
+    }
+    .why-easy .heading-style{
+        margin-bottom: 0;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .lead-wrap .lead-brands img {
+        height: auto;
+        width: 100%;
+        max-height: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .lead-wrap .lead-brands img {
+        max-height: 25px;
+    }
+
+    .cat-img,
+    .dog-img {
+        max-width: 90px;
+        align-self: flex-end;
+    }
+}
