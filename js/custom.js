@@ -41,4 +41,12 @@ $(document).ready(function(){
 $(".hamburger").click(function(){
   $(this).toggleClass("active");
   $("header nav").toggleClass("active");
+  $(".nav-wrap").toggleClass("active");
 })
+
+/* drop down */
+$(".drop-down").hover(function() {
+  $(this).find('.drop-menu').addClass("active");
+}, function() {
+  $(this).find('.drop-menu').removeClass("active");
+});
